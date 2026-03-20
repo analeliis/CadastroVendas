@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Vendas</h1>
+
+        <form class="form-venda" id="formVenda">
+            <input type="text" id="vendedor" placeholder="Nome do vendedor">
+            <input type="number" id="valor" placeholder="Valor da venda">
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <h2>Lista de Vendas</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Vendedor</th>
+                    <th>Valor</th>
+                    <th>Desconto</th>
+                    <th>Valor Final</th>
+                    <th>Data</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+
+            <tbody id="tabelaVendas">
+
+            </tbody>
+
+        </table>
+
+        <div class="acoes-extras">
+            <button type="button" onclick="removerUltimo()">Remover Último</button>
+            <button type="button" onclick="limparTudo()">Limpar Tudo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
